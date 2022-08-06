@@ -1,11 +1,17 @@
 import Button from "./components/Button/button";
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import Icon from "./components/Icon/icon";
 import Menu from "./components/Menu/menu";
 import MenuItem from "./components/Menu/menuItem";
+library.add(fas);
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Icon icon="arrow-down" theme="danger" size="10x" />
+        <Icon icon="arrow-down" theme="primary" size="10x" />
         <Menu>
           <MenuItem>1</MenuItem>
           <MenuItem>2</MenuItem>
